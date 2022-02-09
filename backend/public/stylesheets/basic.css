@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-size: .9em;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace; /* monospace font */
+  background-color: #060606;
+  color: #fafafa;
+}
+
+a, a:visited {
+  color: #6cc3c9;
+  text-decoration: none;
+}
+a:hover, a:visited:hover {
+  text-decoration: underline;
+}
