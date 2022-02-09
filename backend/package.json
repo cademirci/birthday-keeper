@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "A Node.js backend for junior developer assignment.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
     "express": "^4.17.2",
     "helmet": "^5.0.2",
     "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "sequelize": "^6.16.1",
     "sqlite3": "^5.0.2"
   }
 }
