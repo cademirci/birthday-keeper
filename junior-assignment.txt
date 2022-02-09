@@ -1,0 +1,32 @@
+Sensgreen Junior Developer Assignment
+
+Create a web app which allows users to enter and track birthdays of their friends.
+
+Features: 
+  - Ability to add new birthdays, using name and birth date
+  - If today is someone's birthday, show it on the main page
+  - Monthly view, users should be able to see all birthdays for any given month.
+
+Requirements:
+  - Use Node.js and Express.js for backend
+  - Use in-memory sqlite3 database. Link: https://github.com/mapbox/node-sqlite3
+  - After finishing the assignment, send us the url for your github repository.
+
+Not necessary:
+  - User management, registration/login etc. Assume that only one person will use this application, on his/her computer, locally.
+
+Not necessary, but bonus points for:
+  - Using REST (and JSON) for retrieving data from backend
+  - Using any SPA for frontend
+  - Using an ORM, like Sequelize
+  - Having unit tests
+  - Having extra features if you feel like it
+  - Good commit messages!
+
+Assignment will be evaluated by:
+  - Features working correctly / as intended
+  - Code quality. It should be simple and easy to understand
+  - Errors handled correctly
+
+Note:
+  - You can use any other external library if you want.

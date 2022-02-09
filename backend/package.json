@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A Node.js backend for junior developer assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cademirci/jda.git"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "JavaScript",
+    "sqlite",
+    "sqlite3",
+    "Node.js"
+  ],
+  "author": "cademirci (https://github.com/cademirci)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cademirci/jda/issues"
+  },
+  "homepage": "https://github.com/cademirci/jda#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.2",
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2"
+  }
+}
