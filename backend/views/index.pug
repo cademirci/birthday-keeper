@@ -33,4 +33,7 @@ block content
       td= person.name 
       =": "
       td= person.birthdate
+      form(class= "inline-button" action="/delete-person" method="post") 
+        input(type="submit" value=`del: ${person.id}` name='del')
+        
       

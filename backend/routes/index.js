@@ -51,4 +51,13 @@ router.post('/', async (req, res) => {
   }).catch(err => console.log(err))
 })
 
+router.post('/delete-person', async (req, res, next) => {
+  let personId = req.body.del.substring(req.body.del.indexOf(':') + 2)
+  return await Person.destroy({
+    where: {id: personId }
+  })
+    .then(() => res.redirect('/'))
+    .catch(err => console.log(err))
+})
+
 module.exports = router
