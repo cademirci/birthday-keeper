@@ -9,18 +9,18 @@ const app = express();
 
 const database = require('./database')
 
-app.set('views', path.join(__dirname, 'views'))
+// app.set('views', path.join(__dirname, 'views')) // --> default
 app.set('view engine', 'pug')
 
 app.use(cors())
 app.use(helmet())
 app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes'))
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3030
 app.listen(port, () => {
-  console.log(`app is running on ${port}`)
+  console.log(`app is running on localhost ${port}`)
 })
