@@ -1,4 +1,36 @@
 extends layout 
 
 block content 
-  p hello world from the project #{name}
+  p #{name}
+  form(action="/" method="post") 
+    label(for="name") name ->
+    input(type="text" name="name")
+    label(for="birthdate") birthdate ->
+    input(type="text" name="birthdate")
+    button(type="submit" value="save") save
+  p People who are born #[span(style="color: red") today]:
+  each person in birthdayArray.length ? birthdayArray: [{ birthdate: 'noone.'}]
+    br
+    tr 
+      td= person.name 
+      =": "
+      td= person.birthdate
+  br
+  br
+  p People who are born this month:
+  each person in thisMonthArray.length ? thisMonthArray: [{ birthdate: 'noone.'}]
+    br
+    tr 
+      td= person.name 
+      =": "
+      td= person.birthdate
+  br 
+  br
+  p All People:
+  each person in peopleArray
+    br
+    tr 
+      td= person.name 
+      =": "
+      td= person.birthdate
+      
