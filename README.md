@@ -1,2 +1,10 @@
 # jda
-A junior developer assignment app via Node.js, Vue.js and Sqlite.
+A junior developer assignment answer code via Node.js and Sqlite.
+
+# usage 
+
+`cd jda/backend`
+`npm i`
+`npm run dev`
+
+Then the app will appear on localhost 3030. 
