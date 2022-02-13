@@ -18,7 +18,7 @@ a:hover, a:visited:hover {
 }
 
 input, button {
-  margin: 1rem;
+  margin: .5rem 1rem;
   padding: .2rem .5rem;
   background: #1a1a1a;
   color: inherit;
