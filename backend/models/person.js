@@ -5,8 +5,9 @@ const Person = database.define('person',
   {
     id: {
       type: DataTypes.INTEGER,
-      autoIncrement: true, 
-      allowNull: false
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
     name: DataTypes.STRING,
     birthdate: {
