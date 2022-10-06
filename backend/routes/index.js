@@ -26,9 +26,14 @@ router.get('/', async (req, res, next) => {
     .catch(err => console.log(err))
 
   // find birthdays today
-  let currentMonthAndDay = currentMonth + new Date().getDate()
+  let currentDay = new Date().getDate()
   await Person.findAll({
-    where: { birthdate: { [sequelize.Op.substring]: currentMonthAndDay }}
+    where: { 
+      [sequelize.Op.and]: [
+        { birthdate: { [sequelize.Op.substring]: currentMonth }},
+        { birthdate: { [sequelize.Op.substring]: currentDay }}
+      ]
+     }
   })
     .then(result => birthdayToday = result)
     .catch(err => console.log(err))
