@@ -6,8 +6,10 @@ Any user is able to give names and a related birthdays as inputs. Among these pe
 
 ## usage 
 
+After installing the source code: 
+
 ```
-cd jda/backend
+cd birthday-keeper/backend
 npm i
 npm run dev
 ```
