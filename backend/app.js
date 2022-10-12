@@ -9,7 +9,6 @@ const app = express();
 
 const database = require('./database')
 
-// app.set('views', path.join(__dirname, 'views')) // --> default
 app.set('view engine', 'pug')
 
 app.use(cors())

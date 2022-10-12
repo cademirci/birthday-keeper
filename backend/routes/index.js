@@ -39,7 +39,7 @@ router.get('/', async (req, res, next) => {
     .catch(err => console.log(err))
 
   res.render('index', {
-    name: 'junior developer assignment', 
+    name: 'Birthday Keeper via NodeJS and Sequelize', 
     peopleArray: people, 
     thisMonthArray: birthdayThisMonth,
     birthdayArray: birthdayToday

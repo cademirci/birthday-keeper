@@ -1,5 +1,6 @@
-# jda
-A junior developer assignment answer code via Node.js and Sqlite.
+# birthday-keeper
+
+A simple Node.js program in order to do understand and practice basics of using Node.js with a Sequelize database.
 
 ## usage 
 
